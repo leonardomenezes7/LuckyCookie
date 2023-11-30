@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  --body-background:  linear-gradient(45deg, #190361 0%, #B0F 100%);
+  --main-background: #FFFFFF;
+}
+
+body {
+  background: var(--body-background);
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  font-size: 1.6rem;
+  font-family: 'DM Sans', sans-serif;
+  animation: gradient 10s ease infinite;
+  background-size: 200% 200%;
+}
+
+.hide {
+  display: none;
+}
+
+main {
+  background: var(--main-background);
+  padding: 4.8rem 6.4rem 6.4rem 6.4rem;
+  text-align: center;
+  border-radius: .5rem;
+  width: min(42.8rem, 90%);
+  margin-bottom: 12rem;
+  box-shadow: 0px 20px 50px 0px rgba(0, 0, 0, 0.80);
+}
+
+/* screen 1*/
+main h1 {
+  margin-bottom: 1.4rem;
+  color: #34355B;
+  font-size: 2.4rem;
+  font-family: 'Montserrat', sans-serif;
+}
+
+main p {
+  margin-bottom: 2rem;
+}
+
+.screen1 img:hover {
+  -webkit-animation: vibrate-1 .3s linear infinite both;
+  animation: vibrate-1 0.3 linear infinite both;
+  cursor: pointer;
+}
+
+/* screen2 */
+.screen2 h2 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #34355B;
+  margin-bottom: 1.7rem;
+}
+
+.screen2 p {
+  background: #E4EDF1;
+  box-shadow: 2px 2px 2px 0px rgba(85, 85, 85, 0.50);
+  padding: 1rem;
+  font-family: 'Dancing Script', cursive;
+  font-size: 2.4rem;
+  margin-bottom: 3rem;
+  animation: teste 1.5s both;
+}
+
+
+.screen2 button {
+  margin-top: 3rem;
+  border: none;
+  padding: 1.6rem;
+  color: white;
+  border-radius: .4rem;
+  background: #FF9500;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.screen2 button:hover {
+  cursor: pointer;
+  background: #dd8203;
+ transition: .3s;
+}
+
+
+@keyframes gradient {
+0% {
+  background-position: 0% 50%;
+}
+50% {
+  background-position: 100% 50%;
+}
+100% {
+  background-position: 0% 50%;
+}
+}
+
+@keyframes vibrate-1 {
+  0% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  20% {
+    -webkit-transform: translate(-2px, 2px);
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    -webkit-transform: translate(-2px, -2px);
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    -webkit-transform: translate(2px, 2px);
+    transform: translate(2px, 2px);
+  }
+  80% {
+    -webkit-transform: translate(2px, -2px);
+    transform: translate(2px, -2px);
+  }
+  100% {
+    -webkit-transform: translate(0);
+    transform: translate(0);
+  }
+  }
+
+  @keyframes teste {
+    0% {
+      transform: scale(.4) translateY(400px) ;
+    }100% {
+      transform: scale(1) translateY(0);
+    }
+    }
