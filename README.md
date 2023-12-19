@@ -6,3 +6,9 @@ Basic project developed by me in Rocketseat Explorer
 - HTML
 - CSS
 - JavaScript
+
+## Features
+- CSS Animations
+
+# About
+In this project I learned to use CSS animations
